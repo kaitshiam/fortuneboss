@@ -1,0 +1,8 @@
+site_name: 解籤王
+site_url: https://fortuneboss.technologymochia.org
+theme:
+  name: material
+nav:
+    - 緣由: index.md
+    - 收費方式: price.md
+
