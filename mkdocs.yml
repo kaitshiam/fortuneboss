@@ -2,7 +2,45 @@ site_name: 解籤王
 site_url: https://fortuneboss.technologymochia.org
 theme:
   name: material
+  palette:
+  # - scheme: default
+  #   primary: orange
+  #   accent: yellow
+  #   toggle:
+  #     icon: material/brightness-7
+  #     name: Switch to dark mode
+  # - scheme: slate
+  #   primary: orange
+  #   accent: yellow
+  #   toggle:
+  #     icon: material/brightness-4
+  #     name: Switch to light mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: orange
+    accent: yellow
+    toggle:
+      icon: material/brightness-4
+      name: Switch to system preference  
+  - media: "(prefers-color-scheme)"
+    primary: orange
+    accent: yellow
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default 
+    primary: orange
+    accent: yellow
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+
+
 nav:
     - 緣由: index.md
     - 收費方式: price.md
 
+markdown_extensions: 
+  - attr_list
+  - md_in_html
