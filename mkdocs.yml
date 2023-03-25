@@ -3,18 +3,6 @@ site_url: https://fortuneboss.technologymochia.org
 theme:
   name: material
   palette:
-  # - scheme: default
-  #   primary: orange
-  #   accent: yellow
-  #   toggle:
-  #     icon: material/brightness-7
-  #     name: Switch to dark mode
-  # - scheme: slate
-  #   primary: orange
-  #   accent: yellow
-  #   toggle:
-  #     icon: material/brightness-4
-  #     name: Switch to light mode
   - media: "(prefers-color-scheme: dark)"
     scheme: slate
     primary: orange
@@ -38,9 +26,18 @@ theme:
 
 
 nav:
-    - 緣由: index.md
-    - 收費方式: price.md
+    - 服務項目: index.md
+    - 捐款方式: price.md
 
 markdown_extensions: 
   - attr_list
   - md_in_html
+
+extra:
+  social:
+    - icon: material/email
+      link: "mailto:chwc@technologymochia.org"
+    - icon: material/web
+      link: "https://portaly.cc/kaitshiam"
+    - icon: simple/line
+      link: "https://line.me/R/ti/p/@223qrbck"
