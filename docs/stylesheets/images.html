@@ -1,0 +1,271 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片切換</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container {
+            position: relative;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            max-height: 100%;
+            display: none;
+        }
+
+        .caption {
+            display: none;
+            text-align: center;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 4px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .dot.active {
+            background-color: black;
+        }
+    </style>
+    <script>
+        function showImage(index) {
+            const images = document.querySelectorAll('.image-container img');
+            const captions = document.querySelectorAll('.image-container .caption');
+            const dots = document.querySelectorAll('.dots .dot');
+
+            images.forEach((img, idx) => {
+                img.style.display = (idx === index) ? 'block' : 'none';
+            });
+
+            captions.forEach((caption, idx) => {
+                caption.style.display = (idx === index) ? 'block' : 'none';
+            });
+
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === index);
+            });
+        }
+
+        function init() {
+            const dots = document.querySelectorAll('.dots .dot');
+            dots.forEach((dot, idx) => {
+                dot.addEventListener('click', () => showImage(idx));
+            });
+
+            showImage(0);
+        }
+    </script>
+</head>
+
+<body onload="init()">
+    <div class="image-container">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_1.PNG" alt="圖片1">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_2.PNG" alt="圖片2">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_3.PNG" alt="圖片3">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_4.PNG" alt="圖片4">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_5.PNG" alt="圖片5">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_6.PNG" alt="圖片6">
+        <div class="caption">掃描 QR Code 之後可以看到這個畫面，直接加入好友或聊天，就可以開始使用解籤服務。</div>
+        <div class="caption">抽完籤，擲到聖筊後，按下下方解籤按鈕，回答所抽到的籤詩號碼。</div>
+        <div class="caption">看到籤詩之後，輸入心中的問題，請一次輸入完畢，然後稍待片刻。</div>
+        <div class="caption">解籤的結果出現！針對您的問題以及所抽到的籤詩，為您指引方向～</div>
+        <div class="caption">希望為您解籤的同時，也能與您結緣，按下捐款支持，便能隨喜捐款。</div>
+        <div class="caption">本服務支援信用卡捐款，您的捐助能鼓勵我們繼續營運及優化解籤服務。</div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片切換</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(47, 48, 61);
+        }
+
+        .image-container {
+            position: relative;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            max-height: 100%;
+            display: none;
+        }
+
+        .caption {
+            display: none;
+            text-align: center;
+            color: azure;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 4px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .dot.active {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .arrow {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            color: aliceblue;
+        }
+
+        .arrow.left {
+            left: 20%;
+        }
+
+        .arrow.right {
+            left: 76.5%;
+        }
+    </style>
+    <script>
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const images = document.querySelectorAll('.image-container img');
+            const captions = document.querySelectorAll('.image-container .caption');
+            const dots = document.querySelectorAll('.dots .dot');
+
+            images.forEach((img, idx) => {
+                img.style.display = (idx === index) ? 'block' : 'none';
+            });
+
+            captions.forEach((caption, idx) => {
+                caption.style.display = (idx === index) ? 'block' : 'none';
+            });
+
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === index);
+            });
+
+            currentIndex = index;
+        }
+
+        function nextImage() {
+            const images = document.querySelectorAll('.image-container img');
+            showImage((currentIndex + 1) % images.length);
+        }
+
+        function prevImage() {
+            const images = document.querySelectorAll('.image-container img');
+            showImage((currentIndex - 1 + images.length) % images.length);
+        }
+
+        function init() {
+            const dots = document.querySelectorAll('.dots .dot');
+            dots.forEach((dot, idx) => {
+                dot.addEventListener('click', () => showImage(idx));
+            });
+
+            const leftArrow = document.querySelector('.arrow.left');
+            leftArrow.addEventListener('click', prevImage);
+
+            const rightArrow = document.querySelector('.arrow.right');
+            rightArrow.addEventListener('click', nextImage);
+
+            showImage(0);
+        }
+    </script>
+</head>
+
+<body onload="init()">
+    <div class="image-container">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_1.PNG" alt="圖片1">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_2.PNG" alt="圖片2">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_3.PNG" alt="圖片3">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_4.PNG" alt="圖片4">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_5.PNG" alt="圖片5">
+        <img src="https://kaitshiamblob.blob.core.windows.net/images/step_6.PNG" alt="圖片6">
+        <div class="caption">掃描 QR Code 之後可以看到這個畫面，直接加入好友或聊天，就可以開始使用解籤服務。</div>
+        <div class="caption">抽完籤，擲到聖筊後，按下下方解籤按鈕，回答所抽到的籤詩號碼。</div>
+        <div class="caption">看到籤詩之後，輸入心中的問題，請一次輸入完畢，然後稍待片刻。</div>
+        <div class="caption">解籤的結果出現！針對您的問題以及所抽到的籤詩，為您指引方向～</div>
+        <div class="caption">希望為您解籤的同時，也能與您結緣，按下捐款支持，便能隨喜捐款。</div>
+        <div class="caption">本服務支援信用卡捐款，您的捐助能鼓勵我們繼續營運及優化解籤服務。</div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div>
+            <div class="arrow left">❮</div>
+            <div class="arrow right">❯</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
