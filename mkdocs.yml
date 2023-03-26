@@ -1,4 +1,4 @@
-site_name: 解籤王
+site_name: 解籤王 Fortune Boss
 site_url: https://fortuneboss.technologymochia.org
 theme:
   name: material
@@ -27,7 +27,6 @@ theme:
       - navigation.tabs
       - navigation.tabs.sticky
 
-
 nav:
     - 服務項目:
       - 服務說明: index.md
@@ -37,8 +36,12 @@ nav:
 markdown_extensions: 
   - attr_list
   - md_in_html
-
+  - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+  
 extra:
+  generator: false
   social:
     - icon: material/email
       link: "mailto:chwc@technologymochia.org"
@@ -46,3 +49,4 @@ extra:
       link: "https://portaly.cc/kaitshiam"
     - icon: simple/line
       link: "https://line.me/R/ti/p/@223qrbck"
+copyright: Copyright © 2023 Fortune Boss
