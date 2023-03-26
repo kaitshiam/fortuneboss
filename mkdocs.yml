@@ -29,11 +29,10 @@ theme:
 
 nav:
     - 首頁: index.md
-    - 服務項目:
-      - 服務說明: service.md
-      - 觀音籤: guanyin.md
-      - 月老籤: thunderrain.md
-      - 甲子籤: jiazi.md
+    - 服務說明: service.md
+    - 觀音籤: guanyin.md
+    - 月老籤: thunderrain.md
+    - 甲子籤: jiazi.md
     - 捐款方式: price.md
     - 關於我們: about.md
 
