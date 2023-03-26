@@ -23,6 +23,9 @@ theme:
     toggle:
       icon: material/brightness-7
       name: Switch to dark mode
+  features:
+      - navigation.tabs
+      - navigation.tabs.sticky
 
 
 nav:
