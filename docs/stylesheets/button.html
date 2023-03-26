@@ -151,9 +151,9 @@
 
     });
     submitBtn.addEventListener('click', async function () {
-        const response = await fetch('http://127.0.0.1:5000/test', {
+        const response = await fetch('https://kaitshiam.azurewebsites.net/order', {
             method: 'POST',
-            body: selectedButton.textContent
+            body: selectedButton.textContent.slice(3)
         });
 
         if (response.ok) {
