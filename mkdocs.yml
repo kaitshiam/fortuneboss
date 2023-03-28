@@ -32,7 +32,9 @@ nav:
     - 服務說明: service.md
     - 觀音籤: guanyin.md
     - 月老籤: thunderrain.md
-    - 甲子籤: jiazi.md
+    - 甲子籤: 
+        - jiazi.md
+        - 甲子籤線上解籤: jiazi_online.md
     - 捐款方式: price.md
     - 關於我們: about.md
 
