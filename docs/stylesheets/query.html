@@ -192,11 +192,18 @@
                 'errorMessage': '請填寫所有空格'
             }
         };
+        const poems_amount = { 'jiazi': 60, 'guanyin': 100, 'thunderrain': 100 };
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
 
         function getTranslation(key) {
             const language = navigator.language || navigator.userLanguage;
             const languageCode = language.startsWith('zh') ? 'zh' : 'en';
-            translations[languageCode]['numberPlaceholder'] = '1 ~ 60';
+            const poem = getQueryParam('poem');
+            const amount = poems_amount[poem]
+            translations[languageCode]['numberPlaceholder'] = '1 ~ ' + amount;
             return translations[languageCode][key];
         }
 
@@ -225,11 +232,12 @@
             errorMessage.style.display = 'none';
             const language = navigator.language || navigator.userLanguage;
             const languageCode = language.startsWith('zh') ? 'zh' : 'en';
-
+            const poem = getQueryParam('poem');
             const data = {
                 number: numberInput.value,
                 description: descriptionInput.value,
-                language: languageCode
+                language: languageCode,
+                poem: poem
             };
 
             // submitButton.disabled = true;
