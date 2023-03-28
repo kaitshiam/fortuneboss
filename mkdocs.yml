@@ -30,8 +30,12 @@ theme:
 nav:
     - 首頁: index.md
     - 服務說明: service.md
-    - 觀音籤: guanyin.md
-    - 月老籤: thunderrain.md
+    - 觀音籤: 
+        - guanyin.md
+        - 觀音籤線上解籤: guanyin_online.md
+    - 月老籤: 
+        - thunderrain.md
+        - 月老籤線上解籤: thunderrain_online.md
     - 甲子籤: 
         - jiazi.md
         - 甲子籤線上解籤: jiazi_online.md
