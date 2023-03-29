@@ -275,9 +275,10 @@
             } finally {
                 submitButton.disabled = false;
                 loader.style.display = 'none';
+                questionLabel.style.display = 'none'
                 donationIframeContainer.innerHTML = `<iframe src="donation.html" frameborder="0" width="100%" height="100%"></iframe>`;
                 donationIframeContainer.classList.remove('hidden');
-                questionLabel.style.display = 'none'
+
 
 
 
@@ -323,7 +324,7 @@
             <div class="result-text"></div>
 
             <!-- <button type="button" style="display: none;" onclick="handleDonationClick()">捐款支持</button> -->
-            <div id="donation-iframe-container" class="hidden"></div>
+            <!-- <div id="donation-iframe-container" class="hidden"></div> -->
             <button class="back-button" style="display: none;" onclick="handleBackButtonClick()"> ⇦</button>
     </form>
 
