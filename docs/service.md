@@ -11,17 +11,11 @@
 - 按下解籤
 - 輸入抽到的籤支號碼
 - 說出人生的疑惑
-- 稍待片刻後，便能得到解答
+- 隨喜捐款支持
 
-## 付費方式
-- 本服務前兩次免費
-- 第三次之後需線上信用卡付費才能開啟解籤服務
-- 每次解籤費用為 NT$ 66
-<!-- - 隨喜捐款支持 -->
-
-<!-- ## 圖解步驟
+## 圖解步驟
 
 
-<iframe src="https://kaitshiam.github.io/fortuneboss/stylesheets/images.html" width=100% height=650px style="border:none;" ></iframe> -->
-
-![](https://kaitshiamblob.blob.core.windows.net/images/service.png){width=300}![](https://kaitshiamblob.blob.core.windows.net/images/payment.png){width=300}
+<iframe src="https://kaitshiam.github.io/fortuneboss/stylesheets/images.html" width=100% height=650px style="border:none;" ></iframe>
+<!-- 
+![](https://kaitshiamblob.blob.core.windows.net/images/service.png){width=300}![](https://kaitshiamblob.blob.core.windows.net/images/payment.png){width=300} -->
