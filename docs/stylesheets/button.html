@@ -158,9 +158,11 @@
 
         if (response.ok) {
             const content = await response.text();
-            document.open();
-            document.write(`${content}`);
-            document.close();
+            const newWindow = window.open('', '_blank');
+            newWindow.document.open();
+            newWindow.document.write(`${content}`);
+            newWindow.document.close();
+            location.reload();
         } else {
             alert('發生錯誤');
         }
