@@ -39,7 +39,7 @@ nav:
     - 甲子籤: 
         - jiazi.md
         - 甲子籤線上解籤: jiazi_online.md
-    - 捐款方式: price.md
+    - 捐款方式: donation.md
     - 關於我們: about.md
 
 markdown_extensions: 
