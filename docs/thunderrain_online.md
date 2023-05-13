@@ -1,1 +1,1 @@
-<iframe src="/stylesheets/query.html?poem=thunderrain" width=100% height=600px style="border:none;" ></iframe>
+<iframe src="https://kaitshiam.azurewebsites.net/query?poem=thunderrain" width=100% height=600px style="border:none;" ></iframe>
